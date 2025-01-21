@@ -5,17 +5,17 @@
          background: linear-gradient(to bottom, #00AEEF 15%, #f6f1ed 75%);
          margin-bottom: 25px;
     }
-     /*
+     /*No Redesign Styles*/
      .FlightsBooking.w-full.max-w-full.lg\:max-w-6xl.self-center {
         height: 100%!important;
+        padding: 0;
     }
      .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat {
         height: 100% !important;
-        padding: 0 !important;
      }
      .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat::before {z-index: -1!important}
      .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat > div {position: initial!important;}
-     */
+     /*---------------------*/
      .FlightsBooking .bg-cover.bg-no-repeat {
          height: 95vh;
          position: relative;
