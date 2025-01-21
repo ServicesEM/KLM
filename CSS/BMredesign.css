@@ -4,20 +4,13 @@
          padding: 45px 50px 10px;
          background: linear-gradient(to bottom, #00AEEF 15%, #f6f1ed 75%);
     }
-     .FlightsBooking.w-full.max-w-full.lg\\:max-w-6xl.self-center {
+     .FlightsBooking.w-full.max-w-full.lg\:max-w-6xl.self-center {
         height: 100%!important;
     }
      .FlightsBooking .bg-cover.bg-no-repeat {
          height: 95vh;
          position: relative;
          border-radius: 25px;
-    }
-     .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat {
-         height: 100% !important;
-         padding: 0 !important;
-    }
-     .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat::before {
-        z-index: -1!important
     }
      .FlightsBooking .bg-cover.bg-no-repeat::before {
          content: '';
@@ -32,9 +25,6 @@
     }
      .FlightsBooking .bg-cover.bg-no-repeat > div {
         position: absolute;
-    }
-     .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat > div {
-        position: initial!important;
     }
      .FlightsBooking .FareTitleHeader {
          top: 35%;
