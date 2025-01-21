@@ -63,7 +63,9 @@ div[data-em-cmp="flights-booking"] div[data-att="end-date-toggler"] > .flex.flex
 div[data-em-cmp="flights-booking"] div[data-att="start-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap button.block.cursor-pointer,
 div[data-em-cmp="flights-booking"] div[data-att="end-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap button.block.cursor-pointer,
 div[data-em-cmp="flights-booking"] div[data-att="start-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap i.fill-current.not-italic.absolute,
-div[data-em-cmp="flights-booking"] div[data-att="end-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap i.fill-current.not-italic.absolute {
+div[data-em-cmp="flights-booking"] div[data-att="end-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap i.fill-current.not-italic.absolute,
+div[data-em-cmp="flights-booking"] div[data-att="f1_origin"] .text-inherit,
+div[data-em-cmp="flights-booking"] div[data-att="f1_destination"] .text-inherit {
     color: #D0E7F6 !important;
 }
 div[data-em-cmp="flights-booking"] div[data-att="f2_journey-type"] > .flex.flex-wrap > .flex.flex-wrap, 
