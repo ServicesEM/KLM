@@ -1,0 +1,217 @@
+/*Hero Image w/ Content*/
+.HeroImage article {
+    position: relative;
+    max-width: inherit;
+    width: 100vw;
+    margin: auto -50vw;
+    left: 50%;
+    right: 50%;
+}
+.HeroImage article img {height: 75vh!important}
+div#blendedcontent {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    right: 0;
+    background: #d0e7f5;
+    border-top-left-radius: 30px;
+    padding: 2rem 4rem 2rem 3rem;
+}
+div#blendedcontent * {
+    text-align: left;
+    color: #002746;
+}
+div#blendedcontent p {
+    font-size: 16px;
+    font-family: "Universal Sans Text";
+}
+div#blendedcontent h2 {
+    font-size: 25px;
+    font-family: "Universal Sans Display";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+@media only screen and (min-width: 1001px) and (max-width: 1370px) {
+    div#blendedcontent {width: 55%}
+}
+@media only screen and (max-width: 1000px) {
+    div#blendedcontent {
+        position: relative;
+        width: 100%;
+        border-radius: 0;
+    }
+    .HeroImage article img.image {height: 50vh!important}
+}
+@media only screen and (max-width: 768px) {
+    div#blendedcontent * {text-align: center !important}
+}
+/*Grid Cards*/
+section.thingstosee {margin: 30px 0}
+section.thingstosee * {text-align: left!important}
+.introcontent.row {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.introcontent.row .tts_content.col-sm-6 > p:nth-child(1) {color: #565250}
+a.tts_extbutton {
+    background: #0071c2;
+    border-radius: 7px;
+    padding: 10px 15px;
+    color: white !important;
+}
+.tts_cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tts_card {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    transition: transform 0.3s;
+}
+.tts_card.anchoreffect:hover {transform: translateY(-10px)}
+.tts_card img {
+    width: 100%;
+    height: auto;
+}
+.tts_cardcontent {padding: 20px}
+.right-column .tts_card:nth-child(1) .tts_cardcontent,
+.right-column .tts_card:nth-child(1) {background: #002746}
+.tts_card.left .tts_cardcontent,
+.tts_card.left,
+.right-column .tts_card:nth-child(2) .tts_cardcontent,
+.right-column .tts_card:nth-child(2) {
+    background: #d0e7f5;
+}
+.tts_cardcontent .row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.tts_card.left .tts_cardcontent h3, 
+.right-column .tts_card:nth-child(2) .tts_cardcontent h3, 
+.tts_card.left .tts_cardcontent p, 
+.right-column .tts_card:nth-child(2) .tts_cardcontent p {
+    color: #002746 !important;
+}
+.right-column .tts_card:nth-child(1) .tts_cardcontent h3 {color: #d0e7f5!important}
+.right-column .tts_card:nth-child(1) .tts_cardcontent p {color: white!important}
+.tts_cardcontent h3 {font-size: 1.5em !important}
+.tts_cardcontent p {
+    font-size: 0.9em !important;    
+    margin: 0 !important;
+}
+.tts_content.col-sm-6 p:last-of-type {margin: 30px auto 20px}
+.tts_cardcontent .tts_btn.arrow-button {
+    background-color: #0076cd;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: auto;
+}
+.tts_cardcontent i.mdi.mdi-arrow-right {
+    color: transparent;
+    font-size: 1px;
+}
+.tts_cardcontent .tts_btn.arrow-button i.mdi.mdi-arrow-right::before {
+    font-size: 24px;
+    line-height: 2;
+    color: white !important;
+}
+a.tts_extbutton:hover,
+.tts_cardcontent .tts_btn.arrow-button:hover {
+    background-color: #005fa3;
+}
+.tts_cardcontent .row .col-sm-2 {margin-bottom: 10px}
+@media (min-width: 768px) {
+    .tts_cardcontainer {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    .tts_card.left {flex: 1 1 50%}
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1 1 50%;
+    }
+    .right-column .tts_card {flex: 1 1 50%}
+}
+.tts_cardcontainer img.img-responsive {object-fit: cover}
+.right-column .tts_card img.img-responsive {max-height: 250px}
+.tts_card.left img.img-responsive {max-height: 720px}
+@media (max-width: 768px) {
+    .BreadCrumbs {margin-top: -25px}
+    .introcontent.row {justify-content: center}
+    .introcontent.row .col-sm-2 {display: none}
+    .tts_content.col-sm-6 p:last-of-type {text-align: center !important}
+    section.thingstosee .tts_cardcontainer * {text-align: center !important}
+    .tts_cardcontent .row {flex-direction: column;padding: 0 15px;}
+    .right-column .tts_card:nth-child(1) {margin-bottom: 20px}
+    .tts_cardcontainer img.img-responsive {max-height: 250px!important}
+}
+/*FAQ Accordions*/
+section#faqsection {margin: 25px auto}
+section#faqsection h2, section#faqsection * {text-align: left !important}
+section#faqsection h2 {margin: 30px 0px !important}
+.accordion-item h3 {
+    font-size: 18px !important;
+    padding: 20px 0;
+}
+@media only screen and (max-width: 750px) {
+    .accordion-item-header h3.__pfs {hyphens: manual!important}
+}
+.accordion-item {
+    text-align: center;
+    width: 100%;
+}
+.accordion-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    min-height: 3.5rem;
+    cursor: pointer;
+}
+.accordion-item-body {max-height: 0;overflow: hidden;transition: max-height 0.3s ease-out;}
+.accordion-item-body-content {width: 100%;text-align: left;}
+.accordion-item-body-content p {
+    margin: 0 0 16px 0 !important;
+}
+.accordion-item-body-content p {color: #003145 !important}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    transition: color 0.25s;
+    position: relative;
+}
+.icon:before {
+    content: '\F0140';
+    font-family: 'Material Design Icons';
+    color: #565251;
+    pointer-events: all;
+    transition: all 0.3s ease-in-out;
+    font-size: 30px;
+}
+.accordion-item-header[aria-expanded="true"] > .icon::before {transform: rotate(180deg);}
+.divider {    
+    width: 100%;
+    height: 1px;
+    background-color: #d4cdc7;
+}
