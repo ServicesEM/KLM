@@ -1,0 +1,307 @@
+/*Header Redesign*/
+.flex.flex-wrap.header-logos.items-center.header-logos a.w-full {height: 40px}
+.flex.flex-wrap.header-logos.items-center.header-logos a.w-full img.image {height: 100%}
+.header__main-section-body .flex-grow.justify-end {
+    justify-content: flex-start;
+    padding: 0;
+    flex-grow: 0;
+}
+.header__main-section-body {justify-content: space-between!important}
+.header-language-toggle {min-width: 275px}
+/*Body Redesign*/
+div#main {background-color: #f6f1ed}
+/*Breadcrumbs Redesign*/
+.BreadCrumbs ol.breadcrumbs a {color: #003145!important}
+.BreadCrumbs ol.breadcrumbs i::after {color: #001527!important}
+.BreadCrumbs ol.breadcrumbs i {font-size: 25px!important}
+.BreadCrumbs ol.breadcrumbs li span {font-weight: bold !important}
+ol.breadcrumbs.block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ol.breadcrumbs li.inline {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+/*Booking Mask Redesign*/
+p[data-att="fare-disclaimer"],
+p[data-test="disclaimer"] {
+    color: #757575 !important;
+    font-weight: 500;
+}
+div[data-em-cmp="flights-booking"] p[data-att="disclaimer"] {color: #D0E7F6 !important}
+div[data-em-cmp="flights-booking"] div[dir="LTR"].flex > .flex > .flex.flex-wrap.w-full.space-y-2 + .flex.flex-wrap.w-full,
+div[data-em-cmp="flights-booking"] div[data-att="start-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap.cursor-pointer,
+div[data-em-cmp="flights-booking"] div[data-att="end-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap.cursor-pointer,
+div[data-em-cmp="flights-booking"] div[data-att="f1_origin"] > .flex.flex-wrap > .flex.flex-wrap,
+div[data-em-cmp="flights-booking"] div[data-att="f1_destination"] > .flex.flex-wrap > .flex.flex-wrap,
+div[data-em-cmp="flights-booking"] div[data-att="f2_journey-type"] > .flex.flex-wrap > .flex.flex-wrap,
+div[data-em-cmp="flights-booking"] div[data-att="f2_traveler-info"] > .flex.flex-wrap > .flex.flex-wrap,
+div[data-em-cmp="flights-booking"] button[data-att="search"] {
+    border-radius: 12px !important
+}
+div[data-em-cmp="flights-booking"] div[dir="LTR"].flex > .flex > .flex.flex-wrap.w-full.space-y-2 + .flex.flex-wrap.w-full,
+div[data-em-cmp="flights-booking"] div[data-att="start-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap.cursor-pointer,
+div[data-em-cmp="flights-booking"] div[data-att="end-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap.cursor-pointer,
+div[data-em-cmp="flights-booking"] div[data-att="f1_origin"] > .flex.flex-wrap > .flex.flex-wrap,
+div[data-em-cmp="flights-booking"] div[data-att="f1_destination"] > .flex.flex-wrap > .flex.flex-wrap {
+    background: #002746 !important
+}
+div[data-em-cmp="flights-booking"] input[aria-label="fc-booking-destination-aria-label"], 
+div[data-em-cmp="flights-booking"] input[aria-label="fc-booking-origin-aria-label"],
+div[data-em-cmp="flights-booking"] div[data-att="f1_origin"] > .flex.flex-wrap > .flex.flex-wrap label.block.truncate,
+div[data-em-cmp="flights-booking"] div[data-att="f1_destination"] > .flex.flex-wrap > .flex.flex-wrap label.block.truncate,
+div[data-em-cmp="flights-booking"] div[data-att="start-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap label.block.truncate,
+div[data-em-cmp="flights-booking"] div[data-att="end-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap label.block.truncate,
+div[data-em-cmp="flights-booking"] div[data-att="start-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap button.block.cursor-pointer,
+div[data-em-cmp="flights-booking"] div[data-att="end-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap button.block.cursor-pointer,
+div[data-em-cmp="flights-booking"] div[data-att="start-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap i.fill-current.not-italic.absolute,
+div[data-em-cmp="flights-booking"] div[data-att="end-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap i.fill-current.not-italic.absolute {
+    color: #D0E7F6 !important;
+}
+div[data-em-cmp="flights-booking"] div[data-att="f2_journey-type"] > .flex.flex-wrap > .flex.flex-wrap, 
+div[data-em-cmp="flights-booking"] div[data-att="f2_traveler-info"] > .flex.flex-wrap > .flex.flex-wrap {
+    background: #EAF4FB !important;
+    color: #002746 !important;
+}
+/*Two Column Module Redesign*/
+@media (min-width: 1000px) {
+    div[data-em-sfm-type="COLUMNS"] div[data-test="card-container"]:nth-child(3n+2) {margin: 0px 15px}
+    div[data-em-sfm-type="COLUMNS"] div[data-test="card-container"] {width: 32%!important}
+}
+@media (min-width: 768px) {
+    div[data-em-sfm-type="COLUMNS"] div[data-test="card-container"] {
+        width: 48%;
+        padding: 5px;
+    }
+    div[data-em-sfm-type="COLUMNS"] .flex.flex-wrap.w-7\/12.flex-col {width: 75%}
+    div[data-em-sfm-type="COLUMNS"] .flex.flex-wrap.w-5\/12.flex-col.justify-center.items-end {
+        align-items: flex-start;
+        width: 25%;
+    }
+    div[data-em-sfm-type="COLUMNS"] p[data-test="origin-text"] {
+        font-size: 22px;
+        padding: 5px 0px;
+    }
+}
+@media (max-width: 768px) {
+    div[data-em-sfm-type="COLUMNS"] .flex.flex-wrap.w-7\/12.flex-col {
+        width: 75%;
+    }
+    div[data-em-sfm-type="COLUMNS"] .flex.flex-wrap.w-5\/12.flex-col {
+        width: 25%;
+        align-items: flex-start;
+    }
+}
+div[data-em-sfm-type="COLUMNS"] div[data-test="card-container"] > .flex.flex-wrap.w-full > .flex.flex-wrap:nth-child(2)::before {
+    content: '\F0054';
+    font-family: "Material Design Icons";
+    text-align: right;
+    color: #0075cc;
+    font-size: 26px;
+    width: 90%;
+}
+div[data-em-sfm-type="COLUMNS"] div[data-test="card-container"] > .flex.flex-wrap.w-full {
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-shadow: none;
+}
+div[data-em-sfm-type="COLUMNS"] p[data-test="origin-text"] {
+    font-size: 24px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+div[data-em-sfm-type="COLUMNS"] div[data-test="dates"], 
+div[data-em-sfm-type="COLUMNS"] p[data-test="flight-type"], 
+div[data-em-sfm-type="COLUMNS"] p[data-test="flight-type"] ~ * {
+    color: #757575 !important;
+}
+div[data-em-sfm-type="COLUMNS"] div[data-test="destination-text"] {font-weight: 500 !important}
+div[data-em-sfm-type="COLUMNS"] div[data-test="price"] {
+    color: #002746;
+    font-weight: 700;
+    font-size: 18px;
+}
+div[data-em-sfm-type="COLUMNS"] p[data-test="origin-text"] span {display: none}
+div[data-em-sfm-type="COLUMNS"] button[data-test="view-more"] {
+    background: transparent;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px solid #0077CD;
+}
+div[data-em-sfm-type="COLUMNS"] .md\:hidden button[data-test="view-more"] {display: none}
+/*Histogram Module Redesign*/
+div[data-att="date-monthly-fare"] span {font-size: 25px}
+button[data-att="bar-no-fare"] {background: #e3e3e3}
+.histogram-carousel-card, 
+button.block.cursor-pointer[aria-current="false"] {
+    border-radius: 25px !important;
+}
+.FareDailyHistogram div[data-att="origin-selector"] > .flex:nth-child(1) > .flex.flex-wrap, 
+.FareDailyHistogram div[data-att="destination-selector"] > .flex:nth-child(1) > .flex.flex-wrap {
+    border-radius: 12px;
+}
+div[data-att="last-seen-fare"] {display: none}
+div#everymundo-histogram-bars-container {
+    border: none !important;
+    border-radius: 20px;
+}
+button[data-att="bar-fare"] {border-radius: 5px}
+p[data-att="bar-day-week"] {text-transform: lowercase}
+.legend-fare-container span.horizontal-fare-price {
+    background: #f6f1ed;
+    padding: 3px 5px;
+}
+p[data-att="bar-month-name"] {font-weight: 700}
+button.block.cursor-pointer[aria-current="false"] {background: #d0e7f5}
+div[data-att="date-monthly-fare"], 
+.flex.flex-wrap.middle-section.flex.flex-col.text-center {
+    z-index: 10;
+}
+@media (max-width: 768px) {
+    div#everymundo-histogram-bars-container > div.flex > .bars-section {overflow-y: hidden}
+}
+@media (min-width: 768px) {
+    div#everymundo-histogram-bars-container {padding-bottom: 3.5rem}
+    p[data-att="bar-month-name"] {padding: 10px 0}
+}
+/*Location Content Redesign*/
+.LocationContent * {text-align: center}
+.LocationContent ul li {text-align: left}
+.LocationContent p, 
+.LocationContent li {
+    color: #565250 !important;
+}
+.LocationContent .flex > h2 {display: none}
+.LocationContent .mb-4 > h2:nth-child(1) {font-size: 36px}
+/*Interlinking Module Redesign*/
+.InterlinkRoutes {
+    background: #002746;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.InterlinkRoutes h2 {
+    text-align: center;
+    color: white !important;
+}
+.InterlinkRoutes div div > div > ul {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.InterlinkRoutes div div > div > ul > li a, 
+.InterlinkRoutes div div > div > ul > li a:visited{
+    color: #a6d5ef!important;
+    text-decoration: underline !important;
+    padding-right: 0!important;
+}
+.InterlinkRoutes ul li a:hover {color: white !important}
+.InterlinkRoutes button.relative.p-1 {
+    background: transparent;
+    color: #a6d5ef;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 2px solid #a6d5ef;
+}
+@media only screen and (max-width: 750px) {
+    .InterlinkRoutes {width: 95%!important}
+}
+/*Footer Redesign*/
+footer#footer * {
+    background: #002746;
+    color: white;
+}
+footer#footer::before {
+    content: '';
+    display: block;
+    height: 25px;
+    width: 100%;
+    background: #009fda;
+}
+footer#footer .footer > .footer > .flex.flex-wrap.justify-center:nth-child(1) {
+    position: relative;
+    max-width: inherit;
+    width: 100vw;
+    margin: auto -50vw;
+    left: 50%;
+    right: 50%;
+}
+footer#footer .footer > .footer > .flex.flex-wrap.justify-center:nth-child(1) > .flex.flex-wrap.w-full.flex-col.md\:flex-grow.md\:justify-between.px-3.xl\:px-0.pt-4.md\:pt-10.pb-2.xl\:flex-row.md\:max-w-6xl::before {
+    content: '';
+    background-image: url(https://assets.airtrfx.com/media-em/kl/logos/kl-small-default4.svg);
+    width: 130px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1rem 6rem 0 0rem;
+}
+.footer .footer .flex.xl\:w-8\/12 .flex.flex-wrap.flex-col.py-3.ltr\:pr-5.rtl\:pl-5.w-full.md\:w-auto.xl\:flex-1 {
+    padding-left: 5px;
+}
+.flex.flex-wrap.w-full.flex-col.md\:flex-grow.md\:justify-between.px-3.xl\:px-0.pt-4.md\:pt-10.pb-2.xl\:flex-row.md\:max-w-6xl {
+    max-width: 100% !important;
+    justify-content: center;
+}
+.footer .footer .flex .flex > .flex:nth-child(2) > .flex.flex-wrap.flex-col.justify-center.w-full.md\:w-auto.md\:justify-start.xl\:ltr\:mr-10.xl\:rtl\:ml-10.my-2.md\:my-0.md\:mb-6:nth-child(1) {display: none}
+@media (max-width: 768px) {
+    footer#footer > .footer > .footer > div.flex.flex-wrap:nth-child(1) > .flex.flex-wrap.pt-4.pb-2 > div.flex.flex-wrap:nth-child(1)::before {right: 0}
+}
+footer#footer > .footer > .footer > div.flex.flex-wrap:nth-child(1) > .flex.flex-wrap.pt-4.pb-2 > div.flex.flex-wrap:nth-child(2) > .flex.flex-wrap.flex-col.justify-center.w-full.md\:w-auto.md\:justify-start.my-2.md\:my-0.md\:mb-4 > .flex.flex-wrap.justify-center.xl\:justify-start {flex-direction: column}
+@media (max-width: 768px) {
+    footer#footer .xl\:w-8\/12 {
+        flex-wrap: wrap;
+        width: 100%!important;
+    }
+    footer#footer h5 {
+        font-size: 20px !important;
+    }
+    footer#footer ul li a {
+        font-size: 15px;
+    }
+    footer#footer .xl\:w-8\/12 .flex.flex-wrap.flex-col.py-3 {width: 50%;}
+    footer#footer > .footer > .footer > div.flex.flex-wrap:nth-child(1) > .flex.flex-wrap.pt-4.pb-2 > div.flex.flex-wrap:nth-child(2) > .flex.flex-wrap.flex-col.justify-center.w-full.md\:w-auto.md\:justify-start.my-2.md\:my-0.md\:mb-4 > .flex.flex-wrap.justify-center.xl\:justify-start {
+        flex-direction: row!important;
+        justify-content: flex-start!important;
+    }
+    footer .footer > .footer::before {margin: 20px 0px -15px 15px!important}
+    footer .footer .footer h5.pb-2.flex.justify-center.xl\:justify-start {justify-content: flex-start}
+    footer#footer > .footer > .footer > div.flex.flex-wrap:nth-child(2) > .flex > .flex.flex-wrap:nth-child(2) > .flex > .flex > .flex {
+        flex-direction: column!important;
+        gap: 15px;
+    }
+    .legalitems {
+        flex-direction: column!important;
+        align-items: flex-start;
+    }
+}
+@media (min-width: 1200px) {
+    footer#footer .xl\:w-4\/12 {width: 20%!important}
+}
+@media (min-width: 1200px) {
+    .footer .footer .flex.xl\:w-8\/12 {width: 55%}
+}
+@media (max-width: 1600px) {
+    footer .footer > .footer::before {
+        position: relative!important;
+        z-index: 5;
+    }
+}
+footer#footer > .footer > .footer > div.flex.flex-wrap:nth-child(2) > .flex > .flex.flex-wrap:nth-child(2) > .flex > .flex > .flex {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 25px;
+}
+footer .footer .footer > .flex.flex-wrap.justify-center:nth-child(2) > .flex.flex-wrap.flex-col.md\:flex-row.md\:flex-grow.px-3.xl\:px-0.py-4.md\:py-8 > .flex.flex-wrap.justify-center.w-full.pb-4.md\:justify-center {justify-content: flex-start;}
+.legalitems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+footer#footer .footer > .footer > .flex.flex-wrap.justify-center:nth-child(2) {justify-content: start}
+.legalitems p a:hover {text-decoration: underline}
