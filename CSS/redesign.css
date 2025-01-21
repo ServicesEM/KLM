@@ -32,6 +32,10 @@ p[data-test="disclaimer"] {
     color: #757575 !important;
     font-weight: 500;
 }
+span#flights-booking-id-1-error, 
+span#flights-booking-id-2-error {
+    color: #D0E7F6 !important;
+}
 div[data-em-cmp="flights-booking"] p[data-att="disclaimer"] {color: #D0E7F6 !important}
 div[data-em-cmp="flights-booking"] div[dir="LTR"].flex > .flex > .flex.flex-wrap.w-full.space-y-2 + .flex.flex-wrap.w-full,
 div[data-em-cmp="flights-booking"] div[data-att="start-date-toggler"] > .flex.flex-wrap > .flex.flex-wrap.cursor-pointer,
