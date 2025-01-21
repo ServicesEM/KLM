@@ -3,6 +3,7 @@
          height: 100vh;
          padding: 45px 50px 10px;
          background: linear-gradient(to bottom, #00AEEF 15%, #f6f1ed 75%);
+         margin-bottom: 25px;
     }
      /*
      .FlightsBooking.w-full.max-w-full.lg\:max-w-6xl.self-center {
