@@ -1,8 +1,12 @@
+/*Common Styles*/
+.FlightsBooking {background: linear-gradient(to bottom, #00AEEF 15%, #f6f1ed 75%)}
+div[data-em-cmp="dpa_headline"] > div > div {justify-content: center}
+div[data-em-cmp="dpa_headline"] h1 {text-align: center}
+/*Desktop Styles*/
 @media only screen and (min-width: 1000px) {
      .FlightsBooking {
          height: 100vh;
          padding: 45px 50px 10px;
-         background: linear-gradient(to bottom, #00AEEF 15%, #f6f1ed 75%);
          margin-bottom: 25px;
     }
      /*No Redesign Styles*/
@@ -10,9 +14,7 @@
         height: 100%!important;
         padding: 0;
     }
-     .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat {
-        height: 100% !important;
-     }
+     .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat {height: 100% !important}
      .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat::before {z-index: -1!important}
      .FlightsBooking.self-center .px-3.py-4 .bg-cover.bg-no-repeat > div {position: initial!important;}
      /*---------------------*/
@@ -32,9 +34,7 @@
          border-radius: 25px;
          z-index: 0;
     }
-     .FlightsBooking .bg-cover.bg-no-repeat > div {
-        position: absolute;
-    }
+     .FlightsBooking .bg-cover.bg-no-repeat > div {position: absolute}
      .FlightsBooking .FareTitleHeader {
          top: 35%;
          left: 50%;
@@ -46,17 +46,11 @@
          right: 0;
          bottom: 30px;
     }
-     div[data-em-cmp="dpa_headline"] > div > div {
-        background: none !important;
-        justify-content: center;
-    }
-     div[data-em-cmp="dpa_headline"] * {
-        color: white !important;
-    }
+     div[data-em-cmp="dpa_headline"] > div > div {background: none !important}
+     div[data-em-cmp="dpa_headline"] * {color: white !important}
      div[data-em-cmp="dpa_headline"] h1 {
          font-size: 70px !important;
          margin: 15px auto;
-         text-align: center;
          line-height: 1 !important;
     }
      div[data-em-cmp="dpa_headline"] p, div[data-em-cmp="dpa_headline"] p * {
@@ -64,4 +58,9 @@
          margin-top: 15px;
          font-weight: 500;
     }
+}
+/*Mobile Styles*/
+@media only screen and (max-width: 700px) {
+     div[data-em-cmp="dpa_headline"] h1 {margin: auto!important}
+     div[data-em-cmp="flights-booking"] div[dir="LTR"].flex > .flex > .flex.flex-wrap.w-full.space-y-2 + .flex.flex-wrap.w-full {border-radius: 0 0 12px 12px !important}
 }
