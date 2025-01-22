@@ -10,6 +10,7 @@
 .header-language-toggle {min-width: 275px}
 /*Body Redesign*/
 div#main {background-color: #f6f1ed}
+body.overflow-x-hidden {overflow-x: hidden !important}
 /*Breadcrumbs Redesign*/
 .BreadCrumbs ol.breadcrumbs a {color: #003145!important}
 .BreadCrumbs ol.breadcrumbs i::after {color: #001527!important}
@@ -217,6 +218,7 @@ div[data-att="date-monthly-fare"],
     .InterlinkRoutes {width: 95%!important}
 }
 /*Footer Redesign*/
+section#legalcontainer {display: none}
 footer#footer * {
     background: #002746;
     color: white;
