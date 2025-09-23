@@ -68,7 +68,6 @@ a.tts_extbutton {
 }
 .tts_card {
     border-radius: 15px;
-    overflow: hidden;
     width: 100%;
     position: relative;
     transition: transform 0.3s;
@@ -79,14 +78,7 @@ a.tts_extbutton {
     height: auto;
 }
 .tts_cardcontent {padding: 20px}
-.right-column .tts_card:nth-child(1) .tts_cardcontent,
-.right-column .tts_card:nth-child(1) {background: #002746}
-.tts_card.left .tts_cardcontent,
-.tts_card.left,
-.right-column .tts_card:nth-child(2) .tts_cardcontent,
-.right-column .tts_card:nth-child(2) {
-    background: #d0e7f5;
-}
+.right-column .tts_card:nth-child(1) .tts_cardcontent {background: #002746;border-radius: 0 0 15px 15px;}
 .tts_cardcontent .row {
     display: flex;
     flex-direction: row;
@@ -150,8 +142,14 @@ a.tts_extbutton:hover,
     .right-column .tts_card {flex: 1 1 50%}
 }
 .tts_cardcontainer img.img-responsive {object-fit: cover}
-.right-column .tts_card img.img-responsive {max-height: 250px}
-.tts_card.left img.img-responsive {max-height: 720px}
+.right-column .tts_card img.img-responsive {max-height: 250px;border-radius: 15px 15px 0 0;}
+.tts_card.left .tts_cardcontent, 
+.tts_card.left, 
+.right-column .tts_card:nth-child(2) .tts_cardcontent {
+    background: #d0e7f5;
+    border-radius: 0 0 15px 15px;
+}
+.tts_card.left img.img-responsive {max-height: 720px;border-radius: 15px 15px 0 0;}
 @media (max-width: 768px) {
     .BreadCrumbs {margin-top: -25px}
     .introcontent.row {justify-content: center}
