@@ -77,7 +77,7 @@ a.tts_extbutton {
     width: 100%;
     height: auto;
 }
-.tts_cardcontent {padding: 20px}
+.tts_cardcontent {padding: 20px;border-radius: 0 0 15px 15px;}
 .right-column .tts_card:nth-child(1) .tts_cardcontent {background: #002746;border-radius: 0 0 15px 15px;}
 .tts_cardcontent .row {
     display: flex;
@@ -147,7 +147,6 @@ a.tts_extbutton:hover,
 .tts_card.left, 
 .right-column .tts_card:nth-child(2) .tts_cardcontent {
     background: #d0e7f5;
-    border-radius: 0 0 15px 15px;
 }
 .tts_card.left img.img-responsive {max-height: 720px;border-radius: 15px 15px 0 0;}
 @media (max-width: 768px) {
