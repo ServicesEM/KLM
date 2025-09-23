@@ -205,6 +205,8 @@ div[data-att="date-monthly-fare"],
     color: #a6d5ef!important;
     text-decoration: underline !important;
     padding-right: 0!important;
+    text-align: center;
+    margin: auto;
 }
 .InterlinkRoutes ul li a:hover {color: white !important}
 .InterlinkRoutes button.relative.p-1 {
