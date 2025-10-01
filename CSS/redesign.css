@@ -131,6 +131,8 @@ div[data-em-sfm-type="COLUMNS"] div[data-test="price"] {
     color: #002746;
     font-weight: 700;
     font-size: 18px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 div[data-em-sfm-type="COLUMNS"] p[data-test="origin-text"] span {display: none}
 div[data-em-sfm-type="COLUMNS"] button[data-test="view-more"] {
